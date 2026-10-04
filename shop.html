@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop Mobiles & Accessories | Nexora Mobiles</title>
+
+    <meta name="description"
+        content="Shop the latest smartphones and mobile accessories from Apple, Samsung, OnePlus, Google, Nothing, Xiaomi and more at Nexora Mobiles.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+        <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header" id="siteHeader">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- Brand -->
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-text">
+                        Nexora<span>Mobiles</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Search -->
+                <div class="header-search">
+
+                    <input
+                        type="search"
+                        id="headerSearch"
+                        placeholder="Search phones, brands, accessories..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="headerSearchBtn"
+                        aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div
+                        class="search-preview"
+                        id="searchPreview">
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav-menu" id="navMenu">
+
+                    <a href="index.html" class="nav-link ">
+                        Home
+                    </a>
+
+                    <a href="shop.html" class="nav-link active">
+                        Shop
+                    </a>
+
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+
+                </div>
+
+                <!-- Navigation Actions -->
+                <div class="nav-actions">
+
+                    <a
+                        href="cart.html"
+                        class="nav-action"
+                        aria-label="Shopping cart">
+
+                        <i class="bi bi-bag"></i>
+
+                        <span
+                            class="nav-count"
+                            id="cartCount">
+                            0
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="shop.html"
+                        class="nav-action"
+                        aria-label="Shop">
+
+                        <i class="bi bi-grid"></i>
+
+                    </a>
+
+                    <button
+                        type="button"
+                        class="mobile-menu-btn"
+                        id="mobileMenuBtn"
+                        aria-label="Open menu"
+                        aria-expanded="false">
+
+                        <i class="bi bi-list"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="page-hero-content">
+
+                <span class="eyebrow">
+                    NEXORA MOBILES
+                </span>
+
+                <h1>Shop Smartphones & Accessories</h1>
+
+                <p>
+                    Explore the latest smartphones, everyday essentials
+                    and smart accessories at great prices.
+                </p>
+
+                <div class="breadcrumb">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <i class="bi bi-chevron-right"></i>
+
+                    <span>
+                        Shop
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SHOP SECTION
+    ========================== -->
+    <main class="shop-page">
+
+        <div class="container">
+
+            <!-- Mobile Filter Button -->
+            <div class="mobile-filter-bar">
+
+                <button
+                    type="button"
+                    class="btn btn-outline"
+                    id="mobileFilterBtn">
+
+                    <i class="bi bi-sliders"></i>
+
+                    Filters
+
+                </button>
+
+                <span id="mobileResultCount">
+                    Products
+                </span>
+
+            </div>
+
+
+            <div class="shop-layout">
+
+
+                <!-- =========================
+                     FILTER SIDEBAR
+                ========================== -->
+                <aside
+                    class="shop-sidebar"
+                    id="shopSidebar">
+
+                    <div class="filter-header">
+
+                        <div>
+                            <span class="filter-label">
+                                REFINE
+                            </span>
+
+                            <h3>Filters</h3>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="clear-filters"
+                            id="clearFilters">
+
+                            Clear All
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Search -->
+                    <div class="filter-group">
+
+                        <label for="shopSearch">
+                            Search
+                        </label>
+
+                        <div class="filter-search">
+
+                            <i class="bi bi-search"></i>
+
+                            <input
+                                type="search"
+                                id="shopSearch"
+                                placeholder="Search products..."
+                                autocomplete="off">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Category -->
+                    <div class="filter-group">
+
+                        <div class="filter-group-title">
+                            <span>Category</span>
+                        </div>
+
+                        <div
+                            class="filter-options"
+                            id="categoryFilters">
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="all"
+                                    data-filter-category="all"
+                                    checked>
+
+                                <span>All Products</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="smartphones"
+                                    data-filter-category="smartphones">
+
+                                <span>Smartphones</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="accessories"
+                                    data-filter-category="accessories">
+
+                                <span>Accessories</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Brand -->
+                    <div class="filter-group">
+
+                        <div class="filter-group-title">
+                            <span>Brand</span>
+                        </div>
+
+                        <div
+                            class="filter-options"
+                            id="brandFilters">
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="all"
+                                    data-filter-brand="all"
+                                    checked>
+
+                                <span>All Brands</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Apple"
+                                    data-filter-brand="Apple">
+
+                                <span>Apple</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Samsung"
+                                    data-filter-brand="Samsung">
+
+                                <span>Samsung</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="OnePlus"
+                                    data-filter-brand="OnePlus">
+
+                                <span>OnePlus</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Google"
+                                    data-filter-brand="Google">
+
+                                <span>Google</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Nothing"
+                                    data-filter-brand="Nothing">
+
+                                <span>Nothing</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Xiaomi"
+                                    data-filter-brand="Xiaomi">
+
+                                <span>Xiaomi</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Vivo"
+                                    data-filter-brand="Vivo">
+
+                                <span>Vivo</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Oppo"
+                                    data-filter-brand="Oppo">
+
+                                <span>Oppo</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Realme"
+                                    data-filter-brand="Realme">
+
+                                <span>Realme</span>
+
+                            </label>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="radio"
+                                    name="brand"
+                                    value="Motorola"
+                                    data-filter-brand="Motorola">
+
+                                <span>Motorola</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="filter-group">
+
+                        <div class="filter-group-title">
+                            <span>Price Range</span>
+                        </div>
+
+                        <div class="price-inputs">
+
+                            <div class="price-field">
+
+                                <span>Min</span>
+
+                                <input
+                                    type="number"
+                                    id="minPrice"
+                                    min="0"
+                                    value="0"
+                                    placeholder="₹0">
+
+                            </div>
+
+                            <div class="price-field">
+
+                                <span>Max</span>
+
+                                <input
+                                    type="number"
+                                    id="maxPrice"
+                                    min="0"
+                                    value="200000"
+                                    placeholder="₹2,00,000">
+
+                            </div>
+
+                        </div>
+
+                        <div class="price-range-labels">
+
+                            <span id="priceMinLabel">
+                                ₹0
+                            </span>
+
+                            <span id="priceMaxLabel">
+                                ₹2,00,000
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Rating -->
+                    <div class="filter-group">
+
+                        <div class="filter-group-title">
+                            <span>Customer Rating</span>
+                        </div>
+
+                        <div
+                            class="filter-options"
+                            id="ratingFilters">
+
+                            <label class="filter-option rating-option">
+
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="0"
+                                    data-filter-rating="0"
+                                    checked>
+
+                                <span>All Ratings</span>
+
+                            </label>
+
+                            <label class="filter-option rating-option">
+
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="4"
+                                    data-filter-rating="4">
+
+                                <span class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+
+                                <span>& above</span>
+
+                            </label>
+
+                            <label class="filter-option rating-option">
+
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="3"
+                                    data-filter-rating="3">
+
+                                <span class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+
+                                <span>& above</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Close Mobile Filter -->
+                    <button
+                        type="button"
+                        class="btn btn-primary mobile-filter-apply"
+                        id="applyMobileFilters">
+
+                        Apply Filters
+
+                    </button>
+
+                </aside>
+
+
+                <!-- =========================
+                     SHOP CONTENT
+                ========================== -->
+                <section class="shop-content">
+
+
+                    <!-- Toolbar -->
+                    <div class="shop-toolbar">
+
+                        <div class="shop-result">
+
+                            <span class="result-label">
+                                Showing
+                            </span>
+
+                            <strong id="shopResultCount">
+                                0 products
+                            </strong>
+
+                        </div>
+
+
+                        <div class="shop-sort">
+
+                            <label for="sortProducts">
+                                Sort by
+                            </label>
+
+                            <div class="sort-select">
+
+                                <select id="sortProducts">
+
+                                    <option value="default">
+                                        Recommended
+                                    </option>
+
+                                    <option value="newest">
+                                        Newest
+                                    </option>
+
+                                    <option value="discount">
+                                        Best Discount
+                                    </option>
+
+                                    <option value="price-low">
+                                        Price: Low to High
+                                    </option>
+
+                                    <option value="price-high">
+                                        Price: High to Low
+                                    </option>
+
+                                    <option value="rating">
+                                        Customer Rating
+                                    </option>
+
+                                    <option value="name">
+                                        Name: A to Z
+                                    </option>
+
+                                </select>
+
+                                <i class="bi bi-chevron-down"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Active Filters -->
+                    <div
+                        class="active-filters"
+                        id="activeFilters">
+                    </div>
+
+
+                    <!-- Products -->
+                    <div
+                        class="product-grid shop-product-grid"
+                        id="shopProducts">
+
+                        <!-- Products generated by shop.js -->
+
+                    </div>
+
+
+                    <!-- Empty State -->
+                    <div
+                        class="shop-empty"
+                        id="shopEmpty"
+                        hidden>
+
+                        <div class="empty-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+                        <h3>No products found</h3>
+
+                        <p>
+                            Try changing your search or filter options.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="emptyClearFilters">
+
+                            Clear Filters
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div
+                        class="pagination"
+                        id="shopPagination">
+
+                        <!-- Pagination generated by shop.js -->
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
+    <section class="newsletter-section">
+
+        <div class="container">
+
+            <div class="newsletter-box">
+
+                <div class="newsletter-content">
+
+                    <span class="eyebrow">
+                        STAY UPDATED
+                    </span>
+
+                    <h2>
+                        Get the latest deals in your inbox.
+                    </h2>
+
+                    <p>
+                        New launches, price drops and exclusive offers.
+                    </p>
+
+                </div>
+
+                <form
+                    class="newsletter-form"
+                    id="newsletterForm">
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Subscribe
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- Brand -->
+                <div class="footer-column footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo">
+
+                        Nexora<span>Mobiles</span>
+
+                    </a>
+
+                    <p>
+                        Smart devices, genuine products and
+                        dependable service — all in one place.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Categories -->
+                <div class="footer-column">
+
+                    <h3>Categories</h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="shop.html?category=smartphones">
+                                Smartphones
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html?category=accessories">
+                                Accessories
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html?sort=discount">
+                                Best Deals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html?sort=newest">
+                                New Arrivals
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column">
+
+                    <h3>Contact</h3>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="bi bi-geo-alt"></i>
+
+                            <span>
+                                Chennai, Tamil Nadu
+                            </span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-telephone"></i>
+
+                            <span>
+                                +91 98765 43210
+                            </span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-envelope"></i>
+
+                            <span>
+                                support@nexoramobiles.in
+                            </span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Nexora Mobiles. All rights reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+    <div
+        class="toast-container"
+        id="toastContainer"
+        aria-live="polite">
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | Nexora Mobiles</title>
+
+    <meta
+        name="description"
+        content="View detailed specifications, pricing and features of smartphones and accessories at Nexora Mobiles.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+       <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header" id="siteHeader">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- Brand -->
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-text">
+                        Nexora<span>Mobiles</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Search -->
+                <div class="header-search">
+
+                    <input
+                        type="search"
+                        id="headerSearch"
+                        placeholder="Search phones, brands, accessories..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="headerSearchBtn"
+                        aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div
+                        class="search-preview"
+                        id="searchPreview">
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav-menu" id="navMenu">
+
+                    <a href="index.html" class="nav-link active">
+                        Home
+                    </a>
+
+                    <a href="shop.html" class="nav-link">
+                        Shop
+                    </a>
+
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+
+                </div>
+
+                <!-- Navigation Actions -->
+                <div class="nav-actions">
+
+                    <a
+                        href="cart.html"
+                        class="nav-action"
+                        aria-label="Shopping cart">
+
+                        <i class="bi bi-bag"></i>
+
+                        <span
+                            class="nav-count"
+                            id="cartCount">
+                            0
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="shop.html"
+                        class="nav-action"
+                        aria-label="Shop">
+
+                        <i class="bi bi-grid"></i>
+
+                    </a>
+
+                    <button
+                        type="button"
+                        class="mobile-menu-btn"
+                        id="mobileMenuBtn"
+                        aria-label="Open menu"
+                        aria-expanded="false">
+
+                        <i class="bi bi-list"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         PRODUCT PAGE
+    ========================== -->
+    <main class="product-page">
+
+        <div class="container">
+
+            <!-- Breadcrumb -->
+            <div class="product-breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <i class="bi bi-chevron-right"></i>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <i class="bi bi-chevron-right"></i>
+
+                <span id="productBreadcrumb">
+                    Product
+                </span>
+
+            </div>
+
+
+            <!-- =========================
+                 PRODUCT DETAILS
+            ========================== -->
+            <section class="product-detail">
+
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+
+                    <div class="product-main-image">
+
+                        <span
+                            class="product-badge"
+                            id="productBadge">
+                        </span>
+
+                        <button
+                            type="button"
+                            class="product-gallery-wishlist"
+                            id="productGalleryWishlist"
+                            aria-label="Add to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                        <img
+                            src=""
+                            alt="Product"
+                            id="productMainImage">
+
+                    </div>
+
+
+                    <!-- Thumbnail Area -->
+                    <div
+                        class="product-thumbnails"
+                        id="productThumbnails">
+
+                        <button
+                            type="button"
+                            class="product-thumbnail active"
+                            data-image-index="0">
+
+                            <img
+                                src=""
+                                alt="Product thumbnail">
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product Information -->
+                <div class="product-info">
+
+                    <span
+                        class="product-brand"
+                        id="productBrand">
+                    </span>
+
+
+                    <h1 id="productName">
+                        Product Name
+                    </h1>
+
+
+                    <!-- Rating -->
+                    <div class="product-rating-row">
+
+                        <div
+                            class="product-rating"
+                            id="productRating">
+
+                            <span
+                                class="stars"
+                                id="productStars">
+                            </span>
+
+                            <span
+                                class="rating-number"
+                                id="productRatingNumber">
+                            </span>
+
+                        </div>
+
+                        <a
+                            href="#productReviews"
+                            class="review-link">
+
+                            <span id="productReviews">
+                                0
+                            </span>
+
+                            reviews
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="product-price-row">
+
+                        <span
+                            class="product-price"
+                            id="productPrice">
+                        </span>
+
+                        <span
+                            class="product-old-price"
+                            id="productOldPrice">
+                        </span>
+
+                        <span
+                            class="product-discount"
+                            id="productDiscount">
+                        </span>
+
+                    </div>
+
+
+                    <!-- Description -->
+                    <p
+                        class="product-description"
+                        id="productDescription">
+                    </p>
+
+
+                    <!-- Product Options -->
+                    <div class="product-options">
+
+
+                        <!-- Color -->
+                        <div class="product-option">
+
+                            <div class="option-label">
+
+                                <span>
+                                    Color
+                                </span>
+
+                                <strong id="productColor">
+                                </strong>
+
+                            </div>
+
+                            <div
+                                class="color-options"
+                                id="colorOptions">
+
+                                <button
+                                    type="button"
+                                    class="color-option active"
+                                    aria-label="Product color">
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- RAM -->
+                        <div
+                            class="product-option"
+                            id="ramOption">
+
+                            <div class="option-label">
+
+                                <span>
+                                    RAM
+                                </span>
+
+                                <strong id="productRam">
+                                </strong>
+
+                            </div>
+
+                            <div class="variant-options">
+
+                                <button
+                                    type="button"
+                                    class="variant-option active">
+
+                                    <span id="ramValue">
+                                        --
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Storage -->
+                        <div
+                            class="product-option"
+                            id="storageOption">
+
+                            <div class="option-label">
+
+                                <span>
+                                    Storage
+                                </span>
+
+                                <strong id="productStorage">
+                                </strong>
+
+                            </div>
+
+                            <div class="variant-options">
+
+                                <button
+                                    type="button"
+                                    class="variant-option active">
+
+                                    <span id="storageValue">
+                                        --
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Stock -->
+                    <div class="product-stock">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <span id="productStock">
+                            In Stock
+                        </span>
+
+                    </div>
+
+
+                    <!-- Purchase Area -->
+                    <div class="product-purchase">
+
+
+                        <!-- Quantity -->
+                        <div class="quantity-control">
+
+                            <button
+                                type="button"
+                                id="quantityMinus"
+                                aria-label="Decrease quantity">
+
+                                <i class="bi bi-dash"></i>
+
+                            </button>
+
+                            <input
+                                type="number"
+                                id="productQuantity"
+                                value="1"
+                                min="1"
+                                max="10"
+                                aria-label="Quantity">
+
+                            <button
+                                type="button"
+                                id="quantityPlus"
+                                aria-label="Increase quantity">
+
+                                <i class="bi bi-plus"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Add Cart -->
+                        <button
+                            type="button"
+                            class="btn btn-primary product-add-cart"
+                            id="productAddToCart">
+
+                            <i class="bi bi-bag-plus"></i>
+
+                            Add to Cart
+
+                        </button>
+
+
+                        <!-- Buy Now -->
+                        <button
+                            type="button"
+                            class="btn btn-dark product-buy-now"
+                            id="productBuyNow">
+
+                            Buy Now
+
+                        </button>
+
+
+                        <!-- Wishlist -->
+                        <button
+                            type="button"
+                            class="product-wishlist-btn"
+                            id="productWishlist"
+                            aria-label="Add product to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Delivery Information -->
+                    <div class="product-service-info">
+
+                        <div class="service-item">
+
+                            <div class="service-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Fast Delivery
+                                </strong>
+
+                                <span>
+                                    Delivery across India
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="service-item">
+
+                            <div class="service-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Genuine Products
+                                </strong>
+
+                                <span>
+                                    100% authentic products
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="service-item">
+
+                            <div class="service-icon">
+                                <i class="bi bi-arrow-repeat"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Easy Support
+                                </strong>
+
+                                <span>
+                                    Quick customer assistance
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 PRODUCT INFORMATION TABS
+            ========================== -->
+            <section class="product-information">
+
+                <div class="product-tabs">
+
+                    <button
+                        type="button"
+                        class="product-tab active"
+                        data-tab="description">
+
+                        Description
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="product-tab"
+                        data-tab="specifications">
+
+                        Specifications
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="product-tab"
+                        data-tab="delivery">
+
+                        Delivery & Support
+
+                    </button>
+
+                </div>
+
+
+                <!-- Description -->
+                <div
+                    class="product-tab-content active"
+                    id="descriptionTab">
+
+                    <div class="product-description-content">
+
+                        <h2>
+                            Product Details
+                        </h2>
+
+                        <p id="tabProductDescription">
+                            Explore the features and everyday performance
+                            of this product.
+                        </p>
+
+                        <p>
+                            Every product listed on Nexora Mobiles is
+                            selected with quality, reliability and
+                            everyday usability in mind.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Specifications -->
+                <div
+                    class="product-tab-content"
+                    id="specificationsTab">
+
+                    <div class="specifications-grid">
+
+                        <div class="specification-item">
+
+                            <span>
+                                Processor
+                            </span>
+
+                            <strong id="productProcessor">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="specification-item">
+
+                            <span>
+                                Display
+                            </span>
+
+                            <strong id="productDisplay">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="specification-item">
+
+                            <span>
+                                Camera
+                            </span>
+
+                            <strong id="productCamera">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="specification-item">
+
+                            <span>
+                                Battery
+                            </span>
+
+                            <strong id="productBattery">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="specification-item">
+
+                            <span>
+                                RAM
+                            </span>
+
+                            <strong id="specRam">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="specification-item">
+
+                            <span>
+                                Storage
+                            </span>
+
+                            <strong id="specStorage">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="specification-item">
+
+                            <span>
+                                Colour
+                            </span>
+
+                            <strong id="specColor">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="specification-item">
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong id="specCategory">
+                                --
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Delivery -->
+                <div
+                    class="product-tab-content"
+                    id="deliveryTab">
+
+                    <div class="delivery-content">
+
+                        <div class="delivery-block">
+
+                            <i class="bi bi-box-seam"></i>
+
+                            <div>
+
+                                <h3>
+                                    Delivery
+                                </h3>
+
+                                <p>
+                                    Orders are carefully packed and
+                                    dispatched for reliable delivery
+                                    across India.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="delivery-block">
+
+                            <i class="bi bi-headset"></i>
+
+                            <div>
+
+                                <h3>
+                                    Customer Support
+                                </h3>
+
+                                <p>
+                                    Need help with your order?
+                                    Contact our support team for
+                                    assistance.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="delivery-block">
+
+                            <i class="bi bi-credit-card"></i>
+
+                            <div>
+
+                                <h3>
+                                    Secure Payments
+                                </h3>
+
+                                <p>
+                                    Choose from the available payment
+                                    methods during checkout.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 RELATED PRODUCTS
+            ========================== -->
+            <section class="related-products section-padding">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            YOU MAY ALSO LIKE
+                        </span>
+
+                        <h2>
+                            Related Products
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="shop.html"
+                        class="text-link">
+
+                        View All
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="product-grid"
+                    id="relatedProducts">
+
+                    <!-- Related products generated by product.js -->
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
+    <section class="newsletter-section">
+
+        <div class="container">
+
+            <div class="newsletter-box">
+
+                <div class="newsletter-content">
+
+                    <span class="eyebrow">
+                        STAY UPDATED
+                    </span>
+
+                    <h2>
+                        Get the latest deals in your inbox.
+                    </h2>
+
+                    <p>
+                        New launches, price drops and exclusive offers.
+                    </p>
+
+                </div>
+
+                <form
+                    class="newsletter-form"
+                    id="newsletterForm">
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Subscribe
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- Brand -->
+                <div class="footer-column footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo">
+
+                        Nexora<span>Mobiles</span>
+
+                    </a>
+
+                    <p>
+                        Smart devices, genuine products and
+                        dependable service — all in one place.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Categories -->
+                <div class="footer-column">
+
+                    <h3>
+                        Categories
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="shop.html?category=smartphones">
+                                Smartphones
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html?category=accessories">
+                                Accessories
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html?sort=discount">
+                                Best Deals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html?sort=newest">
+                                New Arrivals
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column">
+
+                    <h3>
+                        Contact
+                    </h3>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="bi bi-geo-alt"></i>
+
+                            <span>
+                                Chennai, Tamil Nadu
+                            </span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-telephone"></i>
+
+                            <span>
+                                +91 98765 43210
+                            </span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-envelope"></i>
+
+                            <span>
+                                support@nexoramobiles.in
+                            </span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Nexora Mobiles. All rights reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+    <div
+        class="toast-container"
+        id="toastContainer"
+        aria-live="polite">
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+
+</body>
+
+</html>

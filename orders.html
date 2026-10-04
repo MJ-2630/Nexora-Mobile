@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Orders | Nexora Mobiles</title>
+    <meta
+        name="description"
+        content="View your recent and previous orders at Nexora Mobiles."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+        <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header" id="siteHeader">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- Brand -->
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-text">
+                        Nexora<span>Mobiles</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Search -->
+                <div class="header-search">
+
+                    <input
+                        type="search"
+                        id="headerSearch"
+                        placeholder="Search phones, brands, accessories..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="headerSearchBtn"
+                        aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div
+                        class="search-preview"
+                        id="searchPreview">
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav-menu" id="navMenu">
+
+                    <a href="index.html" class="nav-link active">
+                        Home
+                    </a>
+
+                    <a href="shop.html" class="nav-link">
+                        Shop
+                    </a>
+
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+
+                </div>
+
+                <!-- Navigation Actions -->
+                <div class="nav-actions">
+
+                    <a
+                        href="cart.html"
+                        class="nav-action"
+                        aria-label="Shopping cart">
+
+                        <i class="bi bi-bag"></i>
+
+                        <span
+                            class="nav-count"
+                            id="cartCount">
+                            0
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="shop.html"
+                        class="nav-action"
+                        aria-label="Shop">
+
+                        <i class="bi bi-grid"></i>
+
+                    </a>
+
+                    <button
+                        type="button"
+                        class="mobile-menu-btn"
+                        id="mobileMenuBtn"
+                        aria-label="Open menu"
+                        aria-expanded="false">
+
+                        <i class="bi bi-list"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero orders-hero">
+
+        <div class="container">
+
+            <div class="breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span>/</span>
+
+                <span>
+                    My Orders
+                </span>
+
+            </div>
+
+
+            <div class="page-hero-content">
+
+                <span class="section-eyebrow">
+                    ORDER HISTORY
+                </span>
+
+                <h1>
+                    My Orders
+                </h1>
+
+                <p>
+                    View your previous purchases and keep track
+                    of your Nexora Mobiles orders.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ORDERS ================= -->
+    <main>
+
+        <section class="section orders-section">
+
+            <div class="container">
+
+                <div class="orders-heading">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            YOUR PURCHASES
+                        </span>
+
+                        <h2>
+                            Order History
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="shop.html"
+                        class="btn btn-outline"
+                    >
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+
+                <!-- Orders will be rendered here -->
+                <div
+                    class="orders-list"
+                    id="ordersList"
+                >
+                </div>
+
+
+                <!-- Empty Orders -->
+                <div
+                    class="orders-empty"
+                    id="ordersEmpty"
+                    hidden
+                >
+
+                    <div class="empty-icon">
+                        ▣
+                    </div>
+
+                    <h2>
+                        No Orders Yet
+                    </h2>
+
+                    <p>
+                        You haven't placed any orders yet.
+                        Start shopping and your orders will appear here.
+                    </p>
+
+                    <a
+                        href="shop.html"
+                        class="btn btn-primary"
+                    >
+                        Start Shopping
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ORDER HELP ================= -->
+        <section class="section section-soft">
+
+            <div class="container">
+
+                <div class="order-help-box">
+
+                    <div class="order-help-icon">
+                        ?
+                    </div>
+
+                    <div class="order-help-content">
+
+                        <span class="section-eyebrow">
+                            NEED HELP?
+                        </span>
+
+                        <h2>
+                            Have a Question About Your Order?
+                        </h2>
+
+                        <p>
+                            If you need help with delivery,
+                            payment or any other order-related
+                            question, our support team is ready to help.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-primary"
+                    >
+                        Contact Support
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+        <section class="feature-strip orders-features">
+
+            <div class="container">
+
+                <div class="feature-grid">
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h4>Secure Shopping</h4>
+                            <p>Your information is protected</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ↗
+                        </div>
+
+                        <div>
+                            <h4>Order Tracking</h4>
+                            <p>Stay updated on your orders</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ₹
+                        </div>
+
+                        <div>
+                            <h4>Easy Payments</h4>
+                            <p>Multiple payment options</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ?
+                        </div>
+
+                        <div>
+                            <h4>Customer Support</h4>
+                            <p>We're here when you need us</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter-section">
+
+        <div class="container">
+
+            <div class="newsletter-box">
+
+                <div class="newsletter-content">
+
+                    <span class="section-eyebrow">
+                        STAY UPDATED
+                    </span>
+
+                    <h2>
+                        Get the Latest Mobile Deals
+                    </h2>
+
+                    <p>
+                        Subscribe for new launches, offers
+                        and exclusive mobile deals.
+                    </p>
+
+                </div>
+
+
+                <form
+                    class="newsletter-form"
+                    id="newsletterForm"
+                >
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo"
+                    >
+                        Nexora Mobiles
+                    </a>
+
+                    <p>
+                        Your trusted destination for smartphones,
+                        accessories and everyday mobile essentials.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            X
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            ▶
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="shop.html">
+                        Shop
+                    </a>
+
+                    <a href="brands.html">
+                        Brands
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <!-- Customer -->
+                <div class="footer-column">
+
+                    <h4>
+                        Customer
+                    </h4>
+
+                    <a href="wishlist.html">
+                        Wishlist
+                    </a>
+
+                    <a href="cart.html">
+                        Cart
+                    </a>
+
+                    <a href="orders.html">
+                        My Orders
+                    </a>
+
+                    <a href="contact.html">
+                        Support
+                    </a>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h4>
+                        Contact
+                    </h4>
+
+                    <p>
+                        Chennai, Tamil Nadu
+                    </p>
+
+                    <p>
+                        support@nexoramobiles.com
+                    </p>
+
+                    <p>
+                        +91 98765 43210
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Nexora Mobiles. All rights reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= TOAST ================= -->
+    <div class="toast" id="toast">
+
+        <span class="toast-icon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            Successfully completed
+        </span>
+
+    </div>
+
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/orders.js"></script>
+
+</body>
+</html>

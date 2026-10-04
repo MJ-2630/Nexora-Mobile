@@ -1,0 +1,602 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmed | Nexora Mobiles</title>
+    <meta
+        name="description"
+        content="Your Nexora Mobiles order has been successfully placed."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+        <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header" id="siteHeader">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- Brand -->
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-text">
+                        Nexora<span>Mobiles</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Search -->
+                <div class="header-search">
+
+                    <input
+                        type="search"
+                        id="headerSearch"
+                        placeholder="Search phones, brands, accessories..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="headerSearchBtn"
+                        aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div
+                        class="search-preview"
+                        id="searchPreview">
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav-menu" id="navMenu">
+
+                    <a href="index.html" class="nav-link active">
+                        Home
+                    </a>
+
+                    <a href="shop.html" class="nav-link">
+                        Shop
+                    </a>
+
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+
+                </div>
+
+                <!-- Navigation Actions -->
+                <div class="nav-actions">
+
+                    <a
+                        href="cart.html"
+                        class="nav-action"
+                        aria-label="Shopping cart">
+
+                        <i class="bi bi-bag"></i>
+
+                        <span
+                            class="nav-count"
+                            id="cartCount">
+                            0
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="shop.html"
+                        class="nav-action"
+                        aria-label="Shop">
+
+                        <i class="bi bi-grid"></i>
+
+                    </a>
+
+                    <button
+                        type="button"
+                        class="mobile-menu-btn"
+                        id="mobileMenuBtn"
+                        aria-label="Open menu"
+                        aria-expanded="false">
+
+                        <i class="bi bi-list"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ================= ORDER SUCCESS ================= -->
+    <main class="order-success-page">
+
+        <section class="order-success-section">
+
+            <div class="container">
+
+                <div class="order-success-card">
+
+                    <!-- Success Icon -->
+                    <div class="success-icon">
+                        <span>✓</span>
+                    </div>
+
+
+                    <!-- Main Message -->
+                    <span class="section-eyebrow">
+                        ORDER CONFIRMED
+                    </span>
+
+                    <h1>
+                        Thank You for Your Order!
+                    </h1>
+
+                    <p class="success-message">
+                        Your order has been successfully placed.
+                        We will start processing it shortly.
+                    </p>
+
+
+                    <!-- Order Number -->
+                    <div class="order-number-box">
+
+                        <span>Order Number</span>
+
+                        <strong id="successOrderNumber">
+                            NX-000000
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Order Details -->
+                    <div class="success-details">
+
+                        <div class="success-detail-item">
+
+                            <span class="detail-label">
+                                Order Date
+                            </span>
+
+                            <strong id="successOrderDate">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="success-detail-item">
+
+                            <span class="detail-label">
+                                Payment Method
+                            </span>
+
+                            <strong id="successPaymentMethod">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="success-detail-item">
+
+                            <span class="detail-label">
+                                Total Amount
+                            </span>
+
+                            <strong id="successOrderTotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Delivery Message -->
+                    <div class="delivery-message">
+
+                        <div class="delivery-message-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                What's Next?
+                            </h3>
+
+                            <p>
+                                Your order details have been saved.
+                                You can track your order from the
+                                My Orders section.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Actions -->
+                    <div class="success-actions">
+
+                        <a
+                            href="orders.html"
+                            class="btn btn-primary"
+                        >
+                            View My Orders
+                        </a>
+
+                        <a
+                            href="shop.html"
+                            class="btn btn-outline"
+                        >
+                            Continue Shopping
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+        <section class="feature-strip order-success-features">
+
+            <div class="container">
+
+                <div class="feature-grid">
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h4>Secure Shopping</h4>
+                            <p>Your information is protected</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ↗
+                        </div>
+
+                        <div>
+                            <h4>Order Tracking</h4>
+                            <p>Track your order anytime</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ₹
+                        </div>
+
+                        <div>
+                            <h4>Easy Payments</h4>
+                            <p>Multiple payment options</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            ?
+                        </div>
+
+                        <div>
+                            <h4>Customer Support</h4>
+                            <p>We're here when you need us</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter-section">
+
+        <div class="container">
+
+            <div class="newsletter-box">
+
+                <div class="newsletter-content">
+
+                    <span class="section-eyebrow">
+                        STAY UPDATED
+                    </span>
+
+                    <h2>
+                        Get the Latest Mobile Deals
+                    </h2>
+
+                    <p>
+                        Subscribe for new launches, offers
+                        and exclusive mobile deals.
+                    </p>
+
+                </div>
+
+
+                <form
+                    class="newsletter-form"
+                    id="newsletterForm"
+                >
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo"
+                    >
+                        Nexora Mobiles
+                    </a>
+
+                    <p>
+                        Your trusted destination for smartphones,
+                        accessories and everyday mobile essentials.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            X
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            ▶
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h4>Quick Links</h4>
+
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="brands.html">Brands</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+
+                <!-- Customer -->
+                <div class="footer-column">
+
+                    <h4>Customer</h4>
+
+                    <a href="wishlist.html">Wishlist</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="orders.html">My Orders</a>
+                    <a href="contact.html">Support</a>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h4>Contact</h4>
+
+                    <p>Chennai, Tamil Nadu</p>
+                    <p>support@nexoramobiles.com</p>
+                    <p>+91 98765 43210</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Nexora Mobiles. All rights reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= TOAST ================= -->
+    <div class="toast" id="toast">
+
+        <span class="toast-icon">✓</span>
+
+        <span id="toastMessage">
+            Successfully completed
+        </span>
+
+    </div>
+
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const order = JSON.parse(
+                localStorage.getItem("nexoraLastOrder")
+            );
+
+            if (!order) {
+                return;
+            }
+
+            const orderNumber =
+                document.getElementById("successOrderNumber");
+
+            const orderDate =
+                document.getElementById("successOrderDate");
+
+            const paymentMethod =
+                document.getElementById("successPaymentMethod");
+
+            const orderTotal =
+                document.getElementById("successOrderTotal");
+
+
+            if (orderNumber && order.orderNumber) {
+                orderNumber.textContent = order.orderNumber;
+            }
+
+
+            if (orderDate && order.date) {
+
+                const date = new Date(order.date);
+
+                if (!isNaN(date.getTime())) {
+
+                    orderDate.textContent =
+                        date.toLocaleDateString("en-IN", {
+                            day: "2-digit",
+                            month: "short",
+                            year: "numeric"
+                        });
+
+                } else {
+
+                    orderDate.textContent = order.date;
+
+                }
+            }
+
+
+            if (paymentMethod && order.paymentMethod) {
+
+                const paymentNames = {
+                    cod: "Cash on Delivery",
+                    upi: "UPI",
+                    card: "Credit / Debit Card",
+                    netbanking: "Net Banking"
+                };
+
+                paymentMethod.textContent =
+                    paymentNames[order.paymentMethod] ||
+                    order.paymentMethod;
+
+            }
+
+
+            if (orderTotal && order.total !== undefined) {
+
+                orderTotal.textContent =
+                    "₹" +
+                    Number(order.total).toLocaleString("en-IN");
+
+            }
+
+        });
+    </script>
+
+</body>
+</html>
